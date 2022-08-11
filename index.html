@@ -8,7 +8,7 @@
   <title>Aman Chaudhary | Portfolio</title>
 
   <!--- favicon-->
-  <link rel="shortcut icon" href="./assets/images/my-avatar.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
   <!---custom css link-->
   <link rel="stylesheet" href="./assets/css/style.css">
   <!--- google font link-->
@@ -25,7 +25,7 @@
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Aman Chaudhary" width="80">
+          <img src="./assets/images/Aman.jpeg" alt="Aman Chaudhary" width="80" style="border-radius: 15px;">
         </figure>
 
         <div class="info-content">
@@ -42,11 +42,8 @@
       <div class="sidebar-info_more">
 
         <div class="separator"></div>
-
         <ul class="contacts-list">
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
@@ -152,10 +149,7 @@
 
           <p>
             My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way.
+            Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.
           </p>
         </section>
 
@@ -619,7 +613,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://movie-app-tau-beige.vercel.app/" target="_blank">
 
                 <figure class="project-img">
@@ -637,7 +631,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://my-google-xi.vercel.app/" target="_blank">
 
                 <figure class="project-img">
@@ -682,21 +676,22 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form name="submit-to-google-sheet" class="form" data-form >
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Full name" required>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
           </form>
+          <span id="message" class="success-message"></span>
         </section>
       </article>
     </div>
@@ -706,6 +701,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
 
   <!--
     - ionicon link

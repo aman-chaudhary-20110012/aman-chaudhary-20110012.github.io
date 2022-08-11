@@ -126,3 +126,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbzXbgtNOg5YJmolQStgfg5GUISTRq5wBzCCcW8NsZZUWqlIlC4OZ5LlRBCYZchdxau8pg/exec";
+const contactForm = document.forms['submit-to-google-sheet']
+const message= document.getElementById("message");
+
+contactForm.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(contactForm)})
+    .then(response => {
+      message.innerHTML = "Thank you for your response!"
+      setTimeout(function(){
+        message.innerHTML=""
+      },2000)
+      contactForm.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})

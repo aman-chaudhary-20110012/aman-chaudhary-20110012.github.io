@@ -1222,7 +1222,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
-
+.success-message{
+  font-size: var(--fs-6);
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
 
 
 
